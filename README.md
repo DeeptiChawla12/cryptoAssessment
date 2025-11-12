@@ -74,7 +74,7 @@ The project is structured using **Clean Architecture** and **MVVM**, ensuring sc
 
 ### 1️⃣ Clone the Repository
 ```bash
-git clone https://github.com/yourusername/CryptoCurrencyAssessment.git
+git clone https://github.com/DeeptiChawla12/cryptoAssessment.git
 
 2️⃣ Open in Xcode
 Open CryptoCurrencyAssessment.xcodeproj or .xcworkspace
