@@ -8,28 +8,6 @@
 import Foundation
 import Cache
 
-
-//
-//  CacheManager.swift
-//  CryptoCurrencyAssessment
-//
-//  Created by Deepti Chawla on 11/11/25.
-//
-
-import Foundation
-import Cache
-
-// MARK: - Protocol
-//
-//  CacheManager.swift
-//  CryptoCurrencyAssessment
-//
-//  Created by Deepti Chawla on 11/11/25.
-//
-
-import Foundation
-import Cache
-
 // MARK: - Protocol
 /// A protocol defining caching operations for cryptocurrency data.
 /// This protocol provides methods to save and retrieve cached data,

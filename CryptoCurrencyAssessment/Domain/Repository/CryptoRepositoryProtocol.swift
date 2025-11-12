@@ -7,7 +7,7 @@
 
 import Foundation
 
-/// A repository protocol that defines methods for accessing cryptocurrency data.
+
 /// The `CryptoRepositoryProtocol` serves as an abstraction layer between the
 /// domain and data layers.
 protocol CryptoRepositoryProtocol{
