@@ -1,0 +1,5 @@
+#import <Foundation/Foundation.h>
+@interface PodsDummy_Pods_CryptoCurrencyAssessment_CryptoCurrencyAssessmentUITests : NSObject
+@end
+@implementation PodsDummy_Pods_CryptoCurrencyAssessment_CryptoCurrencyAssessmentUITests
+@end

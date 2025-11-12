@@ -1,0 +1,1116 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0B432F176EDEF7EF6CC6C1F2A1E6797F /* Transformer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62F98CDB2A2C72978994D8BB9FE007AE /* Transformer.swift */; };
+		1110B3A6A3698B848A15C51F397C85EE /* Entry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 667F154BB4C600F91B1A48F5CF80C50C /* Entry.swift */; };
+		15FC234FC879C58049743C9D175CB211 /* Expiry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2153ECF56663880233DCC4FDBA63567B /* Expiry.swift */; };
+		16593BD02DCA5567726C1EB737D2662B /* Pods-CryptoCurrencyAssessmentTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = BA7E5C4CE610ABF7B01920564CF76B10 /* Pods-CryptoCurrencyAssessmentTests-dummy.m */; };
+		17D40525FD06AD9812467CACEF2F3191 /* AsyncStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1AA851F4F274A1001E70A828577504F /* AsyncStorage.swift */; };
+		17D408B54D2EB3A195F1BE7BD13759AF /* Types.swift in Sources */ = {isa = PBXBuildFile; fileRef = A43591AF3C068CB23F874CF42DD43FA0 /* Types.swift */; };
+		208A3C520265CFA273286DD96FFBCC29 /* ExpirationMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1154F4F93C4600AC3C490F42F94BE662 /* ExpirationMode.swift */; };
+		24C62A21A36843FC06269323D26A6CA1 /* JSONArrayWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88AB7970534CBFE3E0AB9AC9B06186EC /* JSONArrayWrapper.swift */; };
+		25F001A7B835265F368B1800594B6A98 /* Pods-CryptoCurrencyAssessment-CryptoCurrencyAssessmentUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 6CFB63F46F8E3DD456C08B5C3D30A257 /* Pods-CryptoCurrencyAssessment-CryptoCurrencyAssessmentUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3365BF39898673635788F8AF92F0C77C /* Storage+Transform.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D00CA0E810F0AE64951CC168B04F948 /* Storage+Transform.swift */; };
+		3533F6C6CF2BB479572BC28EA78E5761 /* UIImage+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99D9DEDAAC03137B75627757FC67890E /* UIImage+Extensions.swift */; };
+		36DACF49B6EE855217F94EBFF5DF51BE /* TransformerFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3527476D04AB4B2B82E3780525B6559A /* TransformerFactory.swift */; };
+		40BF3F2A356A74D934F179317FB85BFB /* MemoryStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2967DCD870AE4D65EBA004C826269342 /* MemoryStorage.swift */; };
+		4294C706E7962E92EACD520C3D67A7FD /* Hasher+constantAccrossExecutions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D92EBA6762C884610D7BC5348E5C51A3 /* Hasher+constantAccrossExecutions.swift */; };
+		43DC19350A7BC70EEE3B108EA9640AC3 /* Optional+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6593262EA9A5CFFBFEC0A4F43C92DDCC /* Optional+Extension.swift */; };
+		4D9CC89876C04531803E45F403C97F9A /* Pods-CryptoCurrencyAssessment-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BEA6D8C09C6F4373DFC7AC457C5049B /* Pods-CryptoCurrencyAssessment-dummy.m */; };
+		525BF79B879460245CC06C05AB654D6E /* DiskConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = D97C11FA7AFD3D3DE0646E7FA1E21C64 /* DiskConfig.swift */; };
+		5BB09F7EAB31DA73B4C7AEEDC402C683 /* Cache-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = E696ABD54E45D1893F75D14AD50B5FC3 /* Cache-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		618BBD2C68A3428A66DEE30B5A8AC92B /* JSONDictionaryWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12132EB41658EFB845B4CAA390E7CAE8 /* JSONDictionaryWrapper.swift */; };
+		63BA9BE77E5C08DC50F4B19DB3300D3C /* HybridStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5935BB895E9349D8638FF01D5F80AFBA /* HybridStorage.swift */; };
+		6B39520EDFE33370E6704B08B56A3C3C /* Storage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 778DC1AA29C37B231EEACF5F71387AAF /* Storage.swift */; };
+		7263C297127AFEAEBE0094FD71E8C5C1 /* Pods-CryptoCurrencyAssessment-CryptoCurrencyAssessmentUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DB6E6526883BE0FF068F530178A1421 /* Pods-CryptoCurrencyAssessment-CryptoCurrencyAssessmentUITests-dummy.m */; };
+		736F85DF191DA3BE767DCE2B863B3231 /* ObservationToken.swift in Sources */ = {isa = PBXBuildFile; fileRef = B957B775FEE872EB2AAF87E038C83440 /* ObservationToken.swift */; };
+		782EEDA2DDB591CC97CE0F2D287D0FE6 /* StorageError.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB6055BCCE5FF5B4EDF5A48D6B76C6F2 /* StorageError.swift */; };
+		80B9289A4AD5CC96E46D6FB66378C7EB /* JSONDecoder+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D919733478630642561547244D753708 /* JSONDecoder+Extensions.swift */; };
+		81B4A28FC7AB8ADAA5EAB5C9260DF9A7 /* DataSerializer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C7AE141FC1922DC7E551B4C0ECFBE71 /* DataSerializer.swift */; };
+		81CADA39EBF97B371B75771E304E1F6F /* MemoryConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7383B3821030687D4BC6E5E60514CF14 /* MemoryConfig.swift */; };
+		878DCF0196D14956E6E48CD6D6660C6C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 384DDA2CB25005BD6479B5987C619DD4 /* Foundation.framework */; };
+		8CDD95710100F7F2213302E7BF845D4A /* Cache-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = AE7CEBC2D478727A11B78E47D6C3F9A5 /* Cache-dummy.m */; };
+		911C4962C756777A1179F558762C0FE6 /* KeyObservationRegistry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38324598987352AEC3571B9A034EEE6B /* KeyObservationRegistry.swift */; };
+		933829D6957D4698B85E837145CFB781 /* DiskStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 081FE942611C4C93A902E60B5E713079 /* DiskStorage.swift */; };
+		AA12A896C1C0794DC433C60193463FB4 /* SyncStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA0C3C30E6F288EA88008749ECC6E1A5 /* SyncStorage.swift */; };
+		B6E16F470EBB43009769C677435B0974 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 384DDA2CB25005BD6479B5987C619DD4 /* Foundation.framework */; };
+		BA0986999B3618C74641BD9AC3E0EE76 /* TypeWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = F606D7E2E3FCF8C6F08B568564E7241A /* TypeWrapper.swift */; };
+		BA9A036D2134385BA9697C0494AFA870 /* Pods-CryptoCurrencyAssessmentTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F1D30C9259A3C17D8FF8EDB59AE9F4D6 /* Pods-CryptoCurrencyAssessmentTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C782B76B81F75B0364EB1A1405DD239E /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DA55D7EE3F078916AC93CFDC398BB9E /* Result.swift */; };
+		C8C6433C75A0D82614C62E94583C9F5C /* ImageWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D8C540F9659DB3E075C1025CE761C14 /* ImageWrapper.swift */; };
+		D2AED985A2D288EF612525F158A55F4C /* StorageObservationRegistry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 855F5647651A54BCB761A0A57187114E /* StorageObservationRegistry.swift */; };
+		D844028BEBB4D20ED744051F8E4D694A /* MemoryCapsule.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC549F97B8892CD0C405AF7A382FE7EF /* MemoryCapsule.swift */; };
+		DC9A5B5E4ECEF86A92D8B06427D079EA /* StorageAware.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F529A22B1FFA8FC25781F0227159C1C /* StorageAware.swift */; };
+		DE3A1A6A5110D5B9DE385FE86E1F3C33 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 384DDA2CB25005BD6479B5987C619DD4 /* Foundation.framework */; };
+		F29C127884793E105E0E7752AABE8152 /* MD5.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2A3E8C4860B8B242324A619FF907DE4 /* MD5.swift */; };
+		F2E10087DF4737AAE043415F12570740 /* Date+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BB8EF68854ABCF185E2EFC0AA6DCBD6 /* Date+Extensions.swift */; };
+		F96DE81F1C4BE9172A133537E0C328BC /* Pods-CryptoCurrencyAssessment-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B0EBBB66DE25FB86BECCB6F7BFF866FA /* Pods-CryptoCurrencyAssessment-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FF9491BACD13B95ABD04E8690C585B00 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 384DDA2CB25005BD6479B5987C619DD4 /* Foundation.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1B2CCBBE777672A0D689C644EBEDBE76 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9513DC9A6C5DA07EDB2094920BC9EE79;
+			remoteInfo = Cache;
+		};
+		32710682F2BB93568157440CAF848E95 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CEE7E835E5E272F993250D74EEDC3B1A;
+			remoteInfo = "Pods-CryptoCurrencyAssessment";
+		};
+		68F39DF5FD1C21182644CCB22F813F6A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9513DC9A6C5DA07EDB2094920BC9EE79;
+			remoteInfo = Cache;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		081FE942611C4C93A902E60B5E713079 /* DiskStorage.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DiskStorage.swift; path = Source/Shared/Storage/DiskStorage.swift; sourceTree = "<group>"; };
+		0D8C540F9659DB3E075C1025CE761C14 /* ImageWrapper.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ImageWrapper.swift; path = Source/Shared/Library/ImageWrapper.swift; sourceTree = "<group>"; };
+		1154F4F93C4600AC3C490F42F94BE662 /* ExpirationMode.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ExpirationMode.swift; path = Source/Shared/Library/ExpirationMode.swift; sourceTree = "<group>"; };
+		12132EB41658EFB845B4CAA390E7CAE8 /* JSONDictionaryWrapper.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JSONDictionaryWrapper.swift; path = Source/Shared/Library/JSONDictionaryWrapper.swift; sourceTree = "<group>"; };
+		122AAE098197D1AE1264B3901CDAB6AE /* Pods-CryptoCurrencyAssessment-CryptoCurrencyAssessmentUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-CryptoCurrencyAssessment-CryptoCurrencyAssessmentUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		1BEA6D8C09C6F4373DFC7AC457C5049B /* Pods-CryptoCurrencyAssessment-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-CryptoCurrencyAssessment-dummy.m"; sourceTree = "<group>"; };
+		2153ECF56663880233DCC4FDBA63567B /* Expiry.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Expiry.swift; path = Source/Shared/Library/Expiry.swift; sourceTree = "<group>"; };
+		23194B7DD578314CF95BCEEB93686F33 /* Pods-CryptoCurrencyAssessment-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-CryptoCurrencyAssessment-acknowledgements.plist"; sourceTree = "<group>"; };
+		273197729329A24B0DFC1EEA088E240B /* Pods-CryptoCurrencyAssessment-CryptoCurrencyAssessmentUITests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-CryptoCurrencyAssessment-CryptoCurrencyAssessmentUITests-Info.plist"; sourceTree = "<group>"; };
+		2967DCD870AE4D65EBA004C826269342 /* MemoryStorage.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MemoryStorage.swift; path = Source/Shared/Storage/MemoryStorage.swift; sourceTree = "<group>"; };
+		2DA55D7EE3F078916AC93CFDC398BB9E /* Result.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Result.swift; path = Source/Shared/Library/Result.swift; sourceTree = "<group>"; };
+		2DC1D8E2EE49F4AD2ECCC10D38198246 /* Pods-CryptoCurrencyAssessment-CryptoCurrencyAssessmentUITests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-CryptoCurrencyAssessment-CryptoCurrencyAssessmentUITests-frameworks.sh"; sourceTree = "<group>"; };
+		2F3CC5C9C4555E4651761914BE8F04B9 /* Pods-CryptoCurrencyAssessment-CryptoCurrencyAssessmentUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-CryptoCurrencyAssessment-CryptoCurrencyAssessmentUITests-acknowledgements.plist"; sourceTree = "<group>"; };
+		3527476D04AB4B2B82E3780525B6559A /* TransformerFactory.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TransformerFactory.swift; path = Source/Shared/Library/TransformerFactory.swift; sourceTree = "<group>"; };
+		366F7B0F9605446325C3272E36A8DAAA /* Pods-CryptoCurrencyAssessment.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CryptoCurrencyAssessment.release.xcconfig"; sourceTree = "<group>"; };
+		38324598987352AEC3571B9A034EEE6B /* KeyObservationRegistry.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = KeyObservationRegistry.swift; path = Source/Shared/Storage/KeyObservationRegistry.swift; sourceTree = "<group>"; };
+		384DDA2CB25005BD6479B5987C619DD4 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS18.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		3A425C722546BB45CA3C33BEFA57AAAA /* Pods-CryptoCurrencyAssessment-CryptoCurrencyAssessmentUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CryptoCurrencyAssessment-CryptoCurrencyAssessmentUITests.release.xcconfig"; sourceTree = "<group>"; };
+		46E37AC8FFC6177321B0057AB2E3A7C4 /* Pods-CryptoCurrencyAssessment */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-CryptoCurrencyAssessment"; path = Pods_CryptoCurrencyAssessment.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4DB6E6526883BE0FF068F530178A1421 /* Pods-CryptoCurrencyAssessment-CryptoCurrencyAssessmentUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-CryptoCurrencyAssessment-CryptoCurrencyAssessmentUITests-dummy.m"; sourceTree = "<group>"; };
+		57C1721BFFA1E38C242AA5CD1717AD4E /* Cache.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Cache.debug.xcconfig; sourceTree = "<group>"; };
+		5935BB895E9349D8638FF01D5F80AFBA /* HybridStorage.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HybridStorage.swift; path = Source/Shared/Storage/HybridStorage.swift; sourceTree = "<group>"; };
+		60E30EFF92EF20340F62D0F158BF2A02 /* Pods-CryptoCurrencyAssessmentTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-CryptoCurrencyAssessmentTests-acknowledgements.plist"; sourceTree = "<group>"; };
+		62F98CDB2A2C72978994D8BB9FE007AE /* Transformer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Transformer.swift; path = Source/Shared/Library/Transformer.swift; sourceTree = "<group>"; };
+		63E648975A13B91CA74122F37F991633 /* Pods-CryptoCurrencyAssessment.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-CryptoCurrencyAssessment.modulemap"; sourceTree = "<group>"; };
+		6593262EA9A5CFFBFEC0A4F43C92DDCC /* Optional+Extension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Optional+Extension.swift"; path = "Source/Shared/Library/Optional+Extension.swift"; sourceTree = "<group>"; };
+		667F154BB4C600F91B1A48F5CF80C50C /* Entry.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Entry.swift; path = Source/Shared/Library/Entry.swift; sourceTree = "<group>"; };
+		6BB8EF68854ABCF185E2EFC0AA6DCBD6 /* Date+Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Date+Extensions.swift"; path = "Source/Shared/Extensions/Date+Extensions.swift"; sourceTree = "<group>"; };
+		6CFB63F46F8E3DD456C08B5C3D30A257 /* Pods-CryptoCurrencyAssessment-CryptoCurrencyAssessmentUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-CryptoCurrencyAssessment-CryptoCurrencyAssessmentUITests-umbrella.h"; sourceTree = "<group>"; };
+		6F529A22B1FFA8FC25781F0227159C1C /* StorageAware.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = StorageAware.swift; path = Source/Shared/Storage/StorageAware.swift; sourceTree = "<group>"; };
+		736B64357A6C420C3A7062C6D479AC7F /* Cache */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Cache; path = Cache.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7383B3821030687D4BC6E5E60514CF14 /* MemoryConfig.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MemoryConfig.swift; path = Source/Shared/Configuration/MemoryConfig.swift; sourceTree = "<group>"; };
+		778DC1AA29C37B231EEACF5F71387AAF /* Storage.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Storage.swift; path = Source/Shared/Storage/Storage.swift; sourceTree = "<group>"; };
+		7C1D38536315FB49BBBCC8806C9B0973 /* Pods-CryptoCurrencyAssessmentTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-CryptoCurrencyAssessmentTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		7D00CA0E810F0AE64951CC168B04F948 /* Storage+Transform.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Storage+Transform.swift"; path = "Source/Shared/Storage/Storage+Transform.swift"; sourceTree = "<group>"; };
+		7D7BEB58781093101214BDAD0B55E57B /* Pods-CryptoCurrencyAssessment-CryptoCurrencyAssessmentUITests */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-CryptoCurrencyAssessment-CryptoCurrencyAssessmentUITests"; path = Pods_CryptoCurrencyAssessment_CryptoCurrencyAssessmentUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7EFC8AB87EE61066E5F8EB3FE4D86ECE /* Pods-CryptoCurrencyAssessment-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-CryptoCurrencyAssessment-Info.plist"; sourceTree = "<group>"; };
+		81EAEF52A5E129F38297B09068A1ED16 /* Pods-CryptoCurrencyAssessmentTests */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-CryptoCurrencyAssessmentTests"; path = Pods_CryptoCurrencyAssessmentTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		855F5647651A54BCB761A0A57187114E /* StorageObservationRegistry.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = StorageObservationRegistry.swift; path = Source/Shared/Storage/StorageObservationRegistry.swift; sourceTree = "<group>"; };
+		860F8B900155FFD2D3A7B1B95711A39A /* Pods-CryptoCurrencyAssessment-CryptoCurrencyAssessmentUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CryptoCurrencyAssessment-CryptoCurrencyAssessmentUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		88AB7970534CBFE3E0AB9AC9B06186EC /* JSONArrayWrapper.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JSONArrayWrapper.swift; path = Source/Shared/Library/JSONArrayWrapper.swift; sourceTree = "<group>"; };
+		8EFE635774D350F08F1BCDF34F102703 /* Pods-CryptoCurrencyAssessment-CryptoCurrencyAssessmentUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-CryptoCurrencyAssessment-CryptoCurrencyAssessmentUITests.modulemap"; sourceTree = "<group>"; };
+		99D9DEDAAC03137B75627757FC67890E /* UIImage+Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIImage+Extensions.swift"; path = "Source/iOS/UIImage+Extensions.swift"; sourceTree = "<group>"; };
+		9C7AE141FC1922DC7E551B4C0ECFBE71 /* DataSerializer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DataSerializer.swift; path = Source/Shared/Library/DataSerializer.swift; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9E652960D617883C16C4DD86A0DC5DC7 /* Pods-CryptoCurrencyAssessment-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-CryptoCurrencyAssessment-frameworks.sh"; sourceTree = "<group>"; };
+		9E8B94DF8F9D1FBE869CA22075834819 /* Pods-CryptoCurrencyAssessmentTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CryptoCurrencyAssessmentTests.debug.xcconfig"; sourceTree = "<group>"; };
+		A43591AF3C068CB23F874CF42DD43FA0 /* Types.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Types.swift; path = Source/Shared/Library/Types.swift; sourceTree = "<group>"; };
+		AE7CEBC2D478727A11B78E47D6C3F9A5 /* Cache-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Cache-dummy.m"; sourceTree = "<group>"; };
+		B0EBBB66DE25FB86BECCB6F7BFF866FA /* Pods-CryptoCurrencyAssessment-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-CryptoCurrencyAssessment-umbrella.h"; sourceTree = "<group>"; };
+		B20780CF90989A966D928DD3C33E4A21 /* Pods-CryptoCurrencyAssessmentTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CryptoCurrencyAssessmentTests.release.xcconfig"; sourceTree = "<group>"; };
+		B957B775FEE872EB2AAF87E038C83440 /* ObservationToken.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ObservationToken.swift; path = Source/Shared/Library/ObservationToken.swift; sourceTree = "<group>"; };
+		BA7E5C4CE610ABF7B01920564CF76B10 /* Pods-CryptoCurrencyAssessmentTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-CryptoCurrencyAssessmentTests-dummy.m"; sourceTree = "<group>"; };
+		BFC215B21A834DAEC6A133768728A54D /* Cache.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = Cache.modulemap; sourceTree = "<group>"; };
+		CE0813ABA4C67A234C1B1D09E6809FDC /* Pods-CryptoCurrencyAssessment-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-CryptoCurrencyAssessment-acknowledgements.markdown"; sourceTree = "<group>"; };
+		D1AA851F4F274A1001E70A828577504F /* AsyncStorage.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AsyncStorage.swift; path = Source/Shared/Storage/AsyncStorage.swift; sourceTree = "<group>"; };
+		D4CAD992F603791A5FD0166D937811F3 /* Cache-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Cache-Info.plist"; sourceTree = "<group>"; };
+		D919733478630642561547244D753708 /* JSONDecoder+Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "JSONDecoder+Extensions.swift"; path = "Source/Shared/Extensions/JSONDecoder+Extensions.swift"; sourceTree = "<group>"; };
+		D92EBA6762C884610D7BC5348E5C51A3 /* Hasher+constantAccrossExecutions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Hasher+constantAccrossExecutions.swift"; path = "Source/Shared/Extensions/Hasher+constantAccrossExecutions.swift"; sourceTree = "<group>"; };
+		D97C11FA7AFD3D3DE0646E7FA1E21C64 /* DiskConfig.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DiskConfig.swift; path = Source/Shared/Configuration/DiskConfig.swift; sourceTree = "<group>"; };
+		DAEEDC0B7A56E41CD412BB311D1E209C /* Cache.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Cache.release.xcconfig; sourceTree = "<group>"; };
+		DD836DF53B7F8DFA4D4DECD042713925 /* Pods-CryptoCurrencyAssessmentTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-CryptoCurrencyAssessmentTests.modulemap"; sourceTree = "<group>"; };
+		E2A3E8C4860B8B242324A619FF907DE4 /* MD5.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MD5.swift; path = Source/Shared/Library/MD5.swift; sourceTree = "<group>"; };
+		E696ABD54E45D1893F75D14AD50B5FC3 /* Cache-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Cache-umbrella.h"; sourceTree = "<group>"; };
+		EA0C3C30E6F288EA88008749ECC6E1A5 /* SyncStorage.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SyncStorage.swift; path = Source/Shared/Storage/SyncStorage.swift; sourceTree = "<group>"; };
+		EB6055BCCE5FF5B4EDF5A48D6B76C6F2 /* StorageError.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = StorageError.swift; path = Source/Shared/Library/StorageError.swift; sourceTree = "<group>"; };
+		F1D30C9259A3C17D8FF8EDB59AE9F4D6 /* Pods-CryptoCurrencyAssessmentTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-CryptoCurrencyAssessmentTests-umbrella.h"; sourceTree = "<group>"; };
+		F606D7E2E3FCF8C6F08B568564E7241A /* TypeWrapper.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TypeWrapper.swift; path = Source/Shared/Library/TypeWrapper.swift; sourceTree = "<group>"; };
+		F6F559EE373FC1FE3DA4570AEB0F5FAE /* Pods-CryptoCurrencyAssessmentTests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-CryptoCurrencyAssessmentTests-Info.plist"; sourceTree = "<group>"; };
+		F9C2AA3ED61AF2D05B7EBC9297E4FAF1 /* Cache-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Cache-prefix.pch"; sourceTree = "<group>"; };
+		FC549F97B8892CD0C405AF7A382FE7EF /* MemoryCapsule.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MemoryCapsule.swift; path = Source/Shared/Library/MemoryCapsule.swift; sourceTree = "<group>"; };
+		FFAD15144C28196990E286F530CD933F /* Pods-CryptoCurrencyAssessment.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CryptoCurrencyAssessment.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1707196627AB3CD8EED8DC54EC2C6758 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				878DCF0196D14956E6E48CD6D6660C6C /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BC1CCDBF4AEBC4F732D7D9BDE86D9D84 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B6E16F470EBB43009769C677435B0974 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E23346890A0566AC3CB239ECC9FEA8ED /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DE3A1A6A5110D5B9DE385FE86E1F3C33 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FA742279FE953F1F66B61C3FCA3DF5EB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FF9491BACD13B95ABD04E8690C585B00 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		01E2902F7AB615B1961047485800C933 /* Cache */ = {
+			isa = PBXGroup;
+			children = (
+				D1AA851F4F274A1001E70A828577504F /* AsyncStorage.swift */,
+				9C7AE141FC1922DC7E551B4C0ECFBE71 /* DataSerializer.swift */,
+				6BB8EF68854ABCF185E2EFC0AA6DCBD6 /* Date+Extensions.swift */,
+				D97C11FA7AFD3D3DE0646E7FA1E21C64 /* DiskConfig.swift */,
+				081FE942611C4C93A902E60B5E713079 /* DiskStorage.swift */,
+				667F154BB4C600F91B1A48F5CF80C50C /* Entry.swift */,
+				1154F4F93C4600AC3C490F42F94BE662 /* ExpirationMode.swift */,
+				2153ECF56663880233DCC4FDBA63567B /* Expiry.swift */,
+				D92EBA6762C884610D7BC5348E5C51A3 /* Hasher+constantAccrossExecutions.swift */,
+				5935BB895E9349D8638FF01D5F80AFBA /* HybridStorage.swift */,
+				0D8C540F9659DB3E075C1025CE761C14 /* ImageWrapper.swift */,
+				88AB7970534CBFE3E0AB9AC9B06186EC /* JSONArrayWrapper.swift */,
+				D919733478630642561547244D753708 /* JSONDecoder+Extensions.swift */,
+				12132EB41658EFB845B4CAA390E7CAE8 /* JSONDictionaryWrapper.swift */,
+				38324598987352AEC3571B9A034EEE6B /* KeyObservationRegistry.swift */,
+				E2A3E8C4860B8B242324A619FF907DE4 /* MD5.swift */,
+				FC549F97B8892CD0C405AF7A382FE7EF /* MemoryCapsule.swift */,
+				7383B3821030687D4BC6E5E60514CF14 /* MemoryConfig.swift */,
+				2967DCD870AE4D65EBA004C826269342 /* MemoryStorage.swift */,
+				B957B775FEE872EB2AAF87E038C83440 /* ObservationToken.swift */,
+				6593262EA9A5CFFBFEC0A4F43C92DDCC /* Optional+Extension.swift */,
+				2DA55D7EE3F078916AC93CFDC398BB9E /* Result.swift */,
+				778DC1AA29C37B231EEACF5F71387AAF /* Storage.swift */,
+				7D00CA0E810F0AE64951CC168B04F948 /* Storage+Transform.swift */,
+				6F529A22B1FFA8FC25781F0227159C1C /* StorageAware.swift */,
+				EB6055BCCE5FF5B4EDF5A48D6B76C6F2 /* StorageError.swift */,
+				855F5647651A54BCB761A0A57187114E /* StorageObservationRegistry.swift */,
+				EA0C3C30E6F288EA88008749ECC6E1A5 /* SyncStorage.swift */,
+				62F98CDB2A2C72978994D8BB9FE007AE /* Transformer.swift */,
+				3527476D04AB4B2B82E3780525B6559A /* TransformerFactory.swift */,
+				A43591AF3C068CB23F874CF42DD43FA0 /* Types.swift */,
+				F606D7E2E3FCF8C6F08B568564E7241A /* TypeWrapper.swift */,
+				99D9DEDAAC03137B75627757FC67890E /* UIImage+Extensions.swift */,
+				E030BF10A6651C8AACBD14DC0008C80D /* Support Files */,
+			);
+			name = Cache;
+			path = Cache;
+			sourceTree = "<group>";
+		};
+		12A4D765A6C0317E607CABC9DA64D587 /* Pods-CryptoCurrencyAssessment-CryptoCurrencyAssessmentUITests */ = {
+			isa = PBXGroup;
+			children = (
+				8EFE635774D350F08F1BCDF34F102703 /* Pods-CryptoCurrencyAssessment-CryptoCurrencyAssessmentUITests.modulemap */,
+				122AAE098197D1AE1264B3901CDAB6AE /* Pods-CryptoCurrencyAssessment-CryptoCurrencyAssessmentUITests-acknowledgements.markdown */,
+				2F3CC5C9C4555E4651761914BE8F04B9 /* Pods-CryptoCurrencyAssessment-CryptoCurrencyAssessmentUITests-acknowledgements.plist */,
+				4DB6E6526883BE0FF068F530178A1421 /* Pods-CryptoCurrencyAssessment-CryptoCurrencyAssessmentUITests-dummy.m */,
+				2DC1D8E2EE49F4AD2ECCC10D38198246 /* Pods-CryptoCurrencyAssessment-CryptoCurrencyAssessmentUITests-frameworks.sh */,
+				273197729329A24B0DFC1EEA088E240B /* Pods-CryptoCurrencyAssessment-CryptoCurrencyAssessmentUITests-Info.plist */,
+				6CFB63F46F8E3DD456C08B5C3D30A257 /* Pods-CryptoCurrencyAssessment-CryptoCurrencyAssessmentUITests-umbrella.h */,
+				860F8B900155FFD2D3A7B1B95711A39A /* Pods-CryptoCurrencyAssessment-CryptoCurrencyAssessmentUITests.debug.xcconfig */,
+				3A425C722546BB45CA3C33BEFA57AAAA /* Pods-CryptoCurrencyAssessment-CryptoCurrencyAssessmentUITests.release.xcconfig */,
+			);
+			name = "Pods-CryptoCurrencyAssessment-CryptoCurrencyAssessmentUITests";
+			path = "Target Support Files/Pods-CryptoCurrencyAssessment-CryptoCurrencyAssessmentUITests";
+			sourceTree = "<group>";
+		};
+		5D139FB3C23835C164824EB2852B7BE3 /* Pods-CryptoCurrencyAssessmentTests */ = {
+			isa = PBXGroup;
+			children = (
+				DD836DF53B7F8DFA4D4DECD042713925 /* Pods-CryptoCurrencyAssessmentTests.modulemap */,
+				7C1D38536315FB49BBBCC8806C9B0973 /* Pods-CryptoCurrencyAssessmentTests-acknowledgements.markdown */,
+				60E30EFF92EF20340F62D0F158BF2A02 /* Pods-CryptoCurrencyAssessmentTests-acknowledgements.plist */,
+				BA7E5C4CE610ABF7B01920564CF76B10 /* Pods-CryptoCurrencyAssessmentTests-dummy.m */,
+				F6F559EE373FC1FE3DA4570AEB0F5FAE /* Pods-CryptoCurrencyAssessmentTests-Info.plist */,
+				F1D30C9259A3C17D8FF8EDB59AE9F4D6 /* Pods-CryptoCurrencyAssessmentTests-umbrella.h */,
+				9E8B94DF8F9D1FBE869CA22075834819 /* Pods-CryptoCurrencyAssessmentTests.debug.xcconfig */,
+				B20780CF90989A966D928DD3C33E4A21 /* Pods-CryptoCurrencyAssessmentTests.release.xcconfig */,
+			);
+			name = "Pods-CryptoCurrencyAssessmentTests";
+			path = "Target Support Files/Pods-CryptoCurrencyAssessmentTests";
+			sourceTree = "<group>";
+		};
+		7DC2DC4B879C77C627E990B0D4CDA6EE /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				F2E95A8A095736C86E76F7E0DF431D50 /* Pods-CryptoCurrencyAssessment */,
+				12A4D765A6C0317E607CABC9DA64D587 /* Pods-CryptoCurrencyAssessment-CryptoCurrencyAssessmentUITests */,
+				5D139FB3C23835C164824EB2852B7BE3 /* Pods-CryptoCurrencyAssessmentTests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		A50CDDEC425D4A83D43B9269BA1EE932 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				01E2902F7AB615B1961047485800C933 /* Cache */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
+				A50CDDEC425D4A83D43B9269BA1EE932 /* Pods */,
+				D77B31D9E953C471ABF32FA62CA4021E /* Products */,
+				7DC2DC4B879C77C627E990B0D4CDA6EE /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E4801F62A6B08CD9B5410329F1A18FDE /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D77B31D9E953C471ABF32FA62CA4021E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				736B64357A6C420C3A7062C6D479AC7F /* Cache */,
+				46E37AC8FFC6177321B0057AB2E3A7C4 /* Pods-CryptoCurrencyAssessment */,
+				7D7BEB58781093101214BDAD0B55E57B /* Pods-CryptoCurrencyAssessment-CryptoCurrencyAssessmentUITests */,
+				81EAEF52A5E129F38297B09068A1ED16 /* Pods-CryptoCurrencyAssessmentTests */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E030BF10A6651C8AACBD14DC0008C80D /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				BFC215B21A834DAEC6A133768728A54D /* Cache.modulemap */,
+				AE7CEBC2D478727A11B78E47D6C3F9A5 /* Cache-dummy.m */,
+				D4CAD992F603791A5FD0166D937811F3 /* Cache-Info.plist */,
+				F9C2AA3ED61AF2D05B7EBC9297E4FAF1 /* Cache-prefix.pch */,
+				E696ABD54E45D1893F75D14AD50B5FC3 /* Cache-umbrella.h */,
+				57C1721BFFA1E38C242AA5CD1717AD4E /* Cache.debug.xcconfig */,
+				DAEEDC0B7A56E41CD412BB311D1E209C /* Cache.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Cache";
+			sourceTree = "<group>";
+		};
+		E4801F62A6B08CD9B5410329F1A18FDE /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				384DDA2CB25005BD6479B5987C619DD4 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		F2E95A8A095736C86E76F7E0DF431D50 /* Pods-CryptoCurrencyAssessment */ = {
+			isa = PBXGroup;
+			children = (
+				63E648975A13B91CA74122F37F991633 /* Pods-CryptoCurrencyAssessment.modulemap */,
+				CE0813ABA4C67A234C1B1D09E6809FDC /* Pods-CryptoCurrencyAssessment-acknowledgements.markdown */,
+				23194B7DD578314CF95BCEEB93686F33 /* Pods-CryptoCurrencyAssessment-acknowledgements.plist */,
+				1BEA6D8C09C6F4373DFC7AC457C5049B /* Pods-CryptoCurrencyAssessment-dummy.m */,
+				9E652960D617883C16C4DD86A0DC5DC7 /* Pods-CryptoCurrencyAssessment-frameworks.sh */,
+				7EFC8AB87EE61066E5F8EB3FE4D86ECE /* Pods-CryptoCurrencyAssessment-Info.plist */,
+				B0EBBB66DE25FB86BECCB6F7BFF866FA /* Pods-CryptoCurrencyAssessment-umbrella.h */,
+				FFAD15144C28196990E286F530CD933F /* Pods-CryptoCurrencyAssessment.debug.xcconfig */,
+				366F7B0F9605446325C3272E36A8DAAA /* Pods-CryptoCurrencyAssessment.release.xcconfig */,
+			);
+			name = "Pods-CryptoCurrencyAssessment";
+			path = "Target Support Files/Pods-CryptoCurrencyAssessment";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		7B0E8EE5A19AA490778FAB66B994BB65 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5BB09F7EAB31DA73B4C7AEEDC402C683 /* Cache-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B841902EB90EB71974600760A2F946D7 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BA9A036D2134385BA9697C0494AFA870 /* Pods-CryptoCurrencyAssessmentTests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F05D072800D7B4E97CBBE45B9F9A4BEF /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				25F001A7B835265F368B1800594B6A98 /* Pods-CryptoCurrencyAssessment-CryptoCurrencyAssessmentUITests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F199BF6F8351B863B36FB64837C28C02 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F96DE81F1C4BE9172A133537E0C328BC /* Pods-CryptoCurrencyAssessment-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		479092761343B8F2B6C655E8E56EDF01 /* Pods-CryptoCurrencyAssessmentTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3AF3D035D174EB56FF233DE6EC907892 /* Build configuration list for PBXNativeTarget "Pods-CryptoCurrencyAssessmentTests" */;
+			buildPhases = (
+				B841902EB90EB71974600760A2F946D7 /* Headers */,
+				DA6988ACA73356C643076587DD89E8C4 /* Sources */,
+				BC1CCDBF4AEBC4F732D7D9BDE86D9D84 /* Frameworks */,
+				4C158E4F4CB3E6475ED2AFA611F27DB6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0A3587836D5CE5E4E8D6F23BA2934753 /* PBXTargetDependency */,
+			);
+			name = "Pods-CryptoCurrencyAssessmentTests";
+			productName = Pods_CryptoCurrencyAssessmentTests;
+			productReference = 81EAEF52A5E129F38297B09068A1ED16 /* Pods-CryptoCurrencyAssessmentTests */;
+			productType = "com.apple.product-type.framework";
+		};
+		73485F889F91CB1A35EF086661FED52A /* Pods-CryptoCurrencyAssessment-CryptoCurrencyAssessmentUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CABEB14F436B56594A83092D2E95F5AB /* Build configuration list for PBXNativeTarget "Pods-CryptoCurrencyAssessment-CryptoCurrencyAssessmentUITests" */;
+			buildPhases = (
+				F05D072800D7B4E97CBBE45B9F9A4BEF /* Headers */,
+				8793B9A7B91E78C6C0C2C2B323B20F3F /* Sources */,
+				E23346890A0566AC3CB239ECC9FEA8ED /* Frameworks */,
+				40810621627D6A0CE075BCD2CB0A2D29 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				51DB6A55BC93FEDDE17A52DB27D35FFF /* PBXTargetDependency */,
+			);
+			name = "Pods-CryptoCurrencyAssessment-CryptoCurrencyAssessmentUITests";
+			productName = Pods_CryptoCurrencyAssessment_CryptoCurrencyAssessmentUITests;
+			productReference = 7D7BEB58781093101214BDAD0B55E57B /* Pods-CryptoCurrencyAssessment-CryptoCurrencyAssessmentUITests */;
+			productType = "com.apple.product-type.framework";
+		};
+		9513DC9A6C5DA07EDB2094920BC9EE79 /* Cache */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5AA4E25CD6BA453AEE796E321836C24B /* Build configuration list for PBXNativeTarget "Cache" */;
+			buildPhases = (
+				7B0E8EE5A19AA490778FAB66B994BB65 /* Headers */,
+				D4F24D9980674370768F0517D75389ED /* Sources */,
+				FA742279FE953F1F66B61C3FCA3DF5EB /* Frameworks */,
+				C5A76C1590C5C4E6291ED1D74CD22C5B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Cache;
+			productName = Cache;
+			productReference = 736B64357A6C420C3A7062C6D479AC7F /* Cache */;
+			productType = "com.apple.product-type.framework";
+		};
+		CEE7E835E5E272F993250D74EEDC3B1A /* Pods-CryptoCurrencyAssessment */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D3B6A78AEB450B47249AB6A4DDA421DA /* Build configuration list for PBXNativeTarget "Pods-CryptoCurrencyAssessment" */;
+			buildPhases = (
+				F199BF6F8351B863B36FB64837C28C02 /* Headers */,
+				4081383E88A36AAA1ECB01C5B197DF2C /* Sources */,
+				1707196627AB3CD8EED8DC54EC2C6758 /* Frameworks */,
+				64D0638323706EC7F367BC67C1BB89BC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9A8D71AC6EDC5A2B4A813FAA4761DE70 /* PBXTargetDependency */,
+			);
+			name = "Pods-CryptoCurrencyAssessment";
+			productName = Pods_CryptoCurrencyAssessment;
+			productReference = 46E37AC8FFC6177321B0057AB2E3A7C4 /* Pods-CryptoCurrencyAssessment */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1600;
+				LastUpgradeCheck = 1600;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 16.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			minimizedProjectReferenceProxies = 0;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = D77B31D9E953C471ABF32FA62CA4021E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9513DC9A6C5DA07EDB2094920BC9EE79 /* Cache */,
+				CEE7E835E5E272F993250D74EEDC3B1A /* Pods-CryptoCurrencyAssessment */,
+				73485F889F91CB1A35EF086661FED52A /* Pods-CryptoCurrencyAssessment-CryptoCurrencyAssessmentUITests */,
+				479092761343B8F2B6C655E8E56EDF01 /* Pods-CryptoCurrencyAssessmentTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		40810621627D6A0CE075BCD2CB0A2D29 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4C158E4F4CB3E6475ED2AFA611F27DB6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		64D0638323706EC7F367BC67C1BB89BC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C5A76C1590C5C4E6291ED1D74CD22C5B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4081383E88A36AAA1ECB01C5B197DF2C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4D9CC89876C04531803E45F403C97F9A /* Pods-CryptoCurrencyAssessment-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8793B9A7B91E78C6C0C2C2B323B20F3F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7263C297127AFEAEBE0094FD71E8C5C1 /* Pods-CryptoCurrencyAssessment-CryptoCurrencyAssessmentUITests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D4F24D9980674370768F0517D75389ED /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				17D40525FD06AD9812467CACEF2F3191 /* AsyncStorage.swift in Sources */,
+				8CDD95710100F7F2213302E7BF845D4A /* Cache-dummy.m in Sources */,
+				81B4A28FC7AB8ADAA5EAB5C9260DF9A7 /* DataSerializer.swift in Sources */,
+				F2E10087DF4737AAE043415F12570740 /* Date+Extensions.swift in Sources */,
+				525BF79B879460245CC06C05AB654D6E /* DiskConfig.swift in Sources */,
+				933829D6957D4698B85E837145CFB781 /* DiskStorage.swift in Sources */,
+				1110B3A6A3698B848A15C51F397C85EE /* Entry.swift in Sources */,
+				208A3C520265CFA273286DD96FFBCC29 /* ExpirationMode.swift in Sources */,
+				15FC234FC879C58049743C9D175CB211 /* Expiry.swift in Sources */,
+				4294C706E7962E92EACD520C3D67A7FD /* Hasher+constantAccrossExecutions.swift in Sources */,
+				63BA9BE77E5C08DC50F4B19DB3300D3C /* HybridStorage.swift in Sources */,
+				C8C6433C75A0D82614C62E94583C9F5C /* ImageWrapper.swift in Sources */,
+				24C62A21A36843FC06269323D26A6CA1 /* JSONArrayWrapper.swift in Sources */,
+				80B9289A4AD5CC96E46D6FB66378C7EB /* JSONDecoder+Extensions.swift in Sources */,
+				618BBD2C68A3428A66DEE30B5A8AC92B /* JSONDictionaryWrapper.swift in Sources */,
+				911C4962C756777A1179F558762C0FE6 /* KeyObservationRegistry.swift in Sources */,
+				F29C127884793E105E0E7752AABE8152 /* MD5.swift in Sources */,
+				D844028BEBB4D20ED744051F8E4D694A /* MemoryCapsule.swift in Sources */,
+				81CADA39EBF97B371B75771E304E1F6F /* MemoryConfig.swift in Sources */,
+				40BF3F2A356A74D934F179317FB85BFB /* MemoryStorage.swift in Sources */,
+				736F85DF191DA3BE767DCE2B863B3231 /* ObservationToken.swift in Sources */,
+				43DC19350A7BC70EEE3B108EA9640AC3 /* Optional+Extension.swift in Sources */,
+				C782B76B81F75B0364EB1A1405DD239E /* Result.swift in Sources */,
+				6B39520EDFE33370E6704B08B56A3C3C /* Storage.swift in Sources */,
+				3365BF39898673635788F8AF92F0C77C /* Storage+Transform.swift in Sources */,
+				DC9A5B5E4ECEF86A92D8B06427D079EA /* StorageAware.swift in Sources */,
+				782EEDA2DDB591CC97CE0F2D287D0FE6 /* StorageError.swift in Sources */,
+				D2AED985A2D288EF612525F158A55F4C /* StorageObservationRegistry.swift in Sources */,
+				AA12A896C1C0794DC433C60193463FB4 /* SyncStorage.swift in Sources */,
+				0B432F176EDEF7EF6CC6C1F2A1E6797F /* Transformer.swift in Sources */,
+				36DACF49B6EE855217F94EBFF5DF51BE /* TransformerFactory.swift in Sources */,
+				17D408B54D2EB3A195F1BE7BD13759AF /* Types.swift in Sources */,
+				BA0986999B3618C74641BD9AC3E0EE76 /* TypeWrapper.swift in Sources */,
+				3533F6C6CF2BB479572BC28EA78E5761 /* UIImage+Extensions.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DA6988ACA73356C643076587DD89E8C4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				16593BD02DCA5567726C1EB737D2662B /* Pods-CryptoCurrencyAssessmentTests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		0A3587836D5CE5E4E8D6F23BA2934753 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-CryptoCurrencyAssessment";
+			target = CEE7E835E5E272F993250D74EEDC3B1A /* Pods-CryptoCurrencyAssessment */;
+			targetProxy = 32710682F2BB93568157440CAF848E95 /* PBXContainerItemProxy */;
+		};
+		51DB6A55BC93FEDDE17A52DB27D35FFF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Cache;
+			target = 9513DC9A6C5DA07EDB2094920BC9EE79 /* Cache */;
+			targetProxy = 1B2CCBBE777672A0D689C644EBEDBE76 /* PBXContainerItemProxy */;
+		};
+		9A8D71AC6EDC5A2B4A813FAA4761DE70 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Cache;
+			target = 9513DC9A6C5DA07EDB2094920BC9EE79 /* Cache */;
+			targetProxy = 68F39DF5FD1C21182644CCB22F813F6A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		38BE4FD8B91A0613A1D2395942D51CA3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 366F7B0F9605446325C3272E36A8DAAA /* Pods-CryptoCurrencyAssessment.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = NO;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				INFOPLIST_FILE = "Target Support Files/Pods-CryptoCurrencyAssessment/Pods-CryptoCurrencyAssessment-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 18.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-CryptoCurrencyAssessment/Pods-CryptoCurrencyAssessment.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		3F591C7A2D08F728C262ED7972A8AC07 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		566B64783981711C0D73FADE9C24AA86 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 860F8B900155FFD2D3A7B1B95711A39A /* Pods-CryptoCurrencyAssessment-CryptoCurrencyAssessmentUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = NO;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				INFOPLIST_FILE = "Target Support Files/Pods-CryptoCurrencyAssessment-CryptoCurrencyAssessmentUITests/Pods-CryptoCurrencyAssessment-CryptoCurrencyAssessmentUITests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 18.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-CryptoCurrencyAssessment-CryptoCurrencyAssessmentUITests/Pods-CryptoCurrencyAssessment-CryptoCurrencyAssessmentUITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		7AC7CC5CF5AE35ED9530C62B980A7DB2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DAEEDC0B7A56E41CD412BB311D1E209C /* Cache.release.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = NO;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GCC_PREFIX_HEADER = "Target Support Files/Cache/Cache-prefix.pch";
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = "Target Support Files/Cache/Cache-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/Cache/Cache.modulemap";
+				PRODUCT_MODULE_NAME = Cache;
+				PRODUCT_NAME = Cache;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_INSTALL_OBJC_HEADER = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		7E505EA606DBFD60FC6D6647549D101B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 57C1721BFFA1E38C242AA5CD1717AD4E /* Cache.debug.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = NO;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GCC_PREFIX_HEADER = "Target Support Files/Cache/Cache-prefix.pch";
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = "Target Support Files/Cache/Cache-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/Cache/Cache.modulemap";
+				PRODUCT_MODULE_NAME = Cache;
+				PRODUCT_NAME = Cache;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_INSTALL_OBJC_HEADER = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		8CDB2A8B3625F7A867FF66D755EA9816 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3A425C722546BB45CA3C33BEFA57AAAA /* Pods-CryptoCurrencyAssessment-CryptoCurrencyAssessmentUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = NO;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				INFOPLIST_FILE = "Target Support Files/Pods-CryptoCurrencyAssessment-CryptoCurrencyAssessmentUITests/Pods-CryptoCurrencyAssessment-CryptoCurrencyAssessmentUITests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 18.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-CryptoCurrencyAssessment-CryptoCurrencyAssessmentUITests/Pods-CryptoCurrencyAssessment-CryptoCurrencyAssessmentUITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		97B4339558CB77649E9E386A20102BEE /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B20780CF90989A966D928DD3C33E4A21 /* Pods-CryptoCurrencyAssessmentTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = NO;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				INFOPLIST_FILE = "Target Support Files/Pods-CryptoCurrencyAssessmentTests/Pods-CryptoCurrencyAssessmentTests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 18.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-CryptoCurrencyAssessmentTests/Pods-CryptoCurrencyAssessmentTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		DD0168E8D2AF1764F8D0AA1B7BA38957 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		E562601E0DBF7E1F684B6B249274E188 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9E8B94DF8F9D1FBE869CA22075834819 /* Pods-CryptoCurrencyAssessmentTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = NO;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				INFOPLIST_FILE = "Target Support Files/Pods-CryptoCurrencyAssessmentTests/Pods-CryptoCurrencyAssessmentTests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 18.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-CryptoCurrencyAssessmentTests/Pods-CryptoCurrencyAssessmentTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		EB83B9A56CC80E963BC0E794F3767569 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FFAD15144C28196990E286F530CD933F /* Pods-CryptoCurrencyAssessment.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = NO;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				INFOPLIST_FILE = "Target Support Files/Pods-CryptoCurrencyAssessment/Pods-CryptoCurrencyAssessment-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 18.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-CryptoCurrencyAssessment/Pods-CryptoCurrencyAssessment.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3AF3D035D174EB56FF233DE6EC907892 /* Build configuration list for PBXNativeTarget "Pods-CryptoCurrencyAssessmentTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E562601E0DBF7E1F684B6B249274E188 /* Debug */,
+				97B4339558CB77649E9E386A20102BEE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DD0168E8D2AF1764F8D0AA1B7BA38957 /* Debug */,
+				3F591C7A2D08F728C262ED7972A8AC07 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5AA4E25CD6BA453AEE796E321836C24B /* Build configuration list for PBXNativeTarget "Cache" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7E505EA606DBFD60FC6D6647549D101B /* Debug */,
+				7AC7CC5CF5AE35ED9530C62B980A7DB2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CABEB14F436B56594A83092D2E95F5AB /* Build configuration list for PBXNativeTarget "Pods-CryptoCurrencyAssessment-CryptoCurrencyAssessmentUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				566B64783981711C0D73FADE9C24AA86 /* Debug */,
+				8CDB2A8B3625F7A867FF66D755EA9816 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D3B6A78AEB450B47249AB6A4DDA421DA /* Build configuration list for PBXNativeTarget "Pods-CryptoCurrencyAssessment" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EB83B9A56CC80E963BC0E794F3767569 /* Debug */,
+				38BE4FD8B91A0613A1D2395942D51CA3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}

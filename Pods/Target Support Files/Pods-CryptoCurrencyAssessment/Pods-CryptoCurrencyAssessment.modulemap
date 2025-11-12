@@ -1,0 +1,6 @@
+framework module Pods_CryptoCurrencyAssessment {
+  umbrella header "Pods-CryptoCurrencyAssessment-umbrella.h"
+
+  export *
+  module * { export * }
+}
