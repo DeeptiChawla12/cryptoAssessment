@@ -48,13 +48,13 @@ struct PriceHeaderView: View {
                 }
             }
 
-            Spacer() // ✅ pushes image to the right
+            Spacer() //  pushes image to the right
 
             CachedAsyncImage(url: URL(string: crypto.image ?? "" )!)
                 .frame(width: 36, height: 36)
                 .clipShape(Circle())
         }
-        .frame(maxWidth: .infinity, alignment: .leading) // ✅ ensures text stays left-aligned
+        .frame(maxWidth: .infinity, alignment: .leading) //  ensures text stays left-aligned
         .padding(.horizontal)
     }
 }

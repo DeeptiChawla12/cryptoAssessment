@@ -14,7 +14,7 @@ struct DurationTabView: View {
     @State private var selected = "1D"
     
     var body: some View {
-        HStack(spacing: 20) {
+        HStack(spacing: 10) {
             ForEach(durations, id: \.self) { duration in
                 Text(duration)
                     .font(.subheadline.bold())

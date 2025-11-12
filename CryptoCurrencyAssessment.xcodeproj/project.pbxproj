@@ -44,6 +44,42 @@
 		D83C3BAEC6F6D41E5D08993E /* Pods-CryptoCurrencyAssessment.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CryptoCurrencyAssessment.release.xcconfig"; path = "Target Support Files/Pods-CryptoCurrencyAssessment/Pods-CryptoCurrencyAssessment.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		63A1F7372EC49E9500E618D2 /* Exceptions for "Documentation" folder in "CryptoCurrencyAssessmentTests" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				API.md,
+				Architecture.md,
+				Testing.md,
+			);
+			target = 63A1F3A32EC1E43800E618D2 /* CryptoCurrencyAssessmentTests */;
+		};
+		63A1F7402EC49F4C00E618D2 /* Exceptions for "Documentation" folder in "CryptoCurrencyAssessment" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Development.md,
+			);
+			target = 63A1F3962EC1E43600E618D2 /* CryptoCurrencyAssessment */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
+/* Begin PBXFileSystemSynchronizedGroupBuildPhaseMembershipExceptionSet section */
+		63A1F7412EC49F4C00E618D2 /* Exceptions for "Documentation" folder in "Compile Sources" phase from "CryptoCurrencyAssessment" target */ = {
+			isa = PBXFileSystemSynchronizedGroupBuildPhaseMembershipExceptionSet;
+			buildPhase = 63A1F3932EC1E43600E618D2 /* Sources */;
+			membershipExceptions = (
+				Development.md,
+			);
+		};
+		63A1F7422EC49F4C00E618D2 /* Exceptions for "Documentation" folder in "Compile Sources" phase from "CryptoCurrencyAssessmentTests" target */ = {
+			isa = PBXFileSystemSynchronizedGroupBuildPhaseMembershipExceptionSet;
+			buildPhase = 63A1F3A02EC1E43800E618D2 /* Sources */;
+			membershipExceptions = (
+				Development.md,
+			);
+		};
+/* End PBXFileSystemSynchronizedGroupBuildPhaseMembershipExceptionSet section */
+
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		63A1F3992EC1E43600E618D2 /* CryptoCurrencyAssessment */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
@@ -58,6 +94,17 @@
 		63A1F3B12EC1E43900E618D2 /* CryptoCurrencyAssessmentUITests */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			path = CryptoCurrencyAssessmentUITests;
+			sourceTree = "<group>";
+		};
+		63A1F7332EC49E6C00E618D2 /* Documentation */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				63A1F7402EC49F4C00E618D2 /* Exceptions for "Documentation" folder in "CryptoCurrencyAssessment" target */,
+				63A1F7412EC49F4C00E618D2 /* Exceptions for "Documentation" folder in "Compile Sources" phase from "CryptoCurrencyAssessment" target */,
+				63A1F7372EC49E9500E618D2 /* Exceptions for "Documentation" folder in "CryptoCurrencyAssessmentTests" target */,
+				63A1F7422EC49F4C00E618D2 /* Exceptions for "Documentation" folder in "Compile Sources" phase from "CryptoCurrencyAssessmentTests" target */,
+			);
+			path = Documentation;
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
@@ -96,6 +143,7 @@
 				63A1F3992EC1E43600E618D2 /* CryptoCurrencyAssessment */,
 				63A1F3A72EC1E43900E618D2 /* CryptoCurrencyAssessmentTests */,
 				63A1F3B12EC1E43900E618D2 /* CryptoCurrencyAssessmentUITests */,
+				63A1F7332EC49E6C00E618D2 /* Documentation */,
 				63A1F3982EC1E43600E618D2 /* Products */,
 				9BF16AEDC24659266BC0A967 /* Pods */,
 				AA406DCA66C7364C5FDB1470 /* Frameworks */,
@@ -154,6 +202,7 @@
 			);
 			fileSystemSynchronizedGroups = (
 				63A1F3992EC1E43600E618D2 /* CryptoCurrencyAssessment */,
+				63A1F7332EC49E6C00E618D2 /* Documentation */,
 			);
 			name = CryptoCurrencyAssessment;
 			productName = CryptoCurrencyAssessment;
