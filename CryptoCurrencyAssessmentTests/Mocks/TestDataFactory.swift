@@ -9,13 +9,11 @@ import Foundation
 
 @testable import CryptoCurrencyAssessment
 
-/// Factory class for creating consistent test data across different test suites
-/// Centralizes test data creation to ensure consistency and reduce duplication
 enum DataFactoryTest {
     
-    // MARK: - Crypto Models
+   
     
-    /// Creates a sample Bitcoin model for testing
+   
     static func createBitcoin() -> CryptoModel {
         return CryptoModel(
             id: "bitcoin",
@@ -47,7 +45,7 @@ enum DataFactoryTest {
         )
     }
     
-    /// Creates a sample Ethereum model for testing
+  
     static func createEthereum() -> CryptoModel {
         return CryptoModel(
             id: "ethereum",
@@ -79,7 +77,7 @@ enum DataFactoryTest {
         )
     }
     
-    /// Creates a sample top-five cryptocurrency list
+    
     static func createTopFiveCryptos() -> [CryptoModel] {
         return [
             createBitcoin(),
@@ -117,7 +115,7 @@ enum DataFactoryTest {
         ]
     }
     
-    /// Creates a sample ROI object
+  
     static func createROI() -> ROI {
         return ROI(
             times: 78.5,
@@ -126,9 +124,6 @@ enum DataFactoryTest {
         )
     }
     
-    // MARK: - Chart Data
-    
-    /// Creates sample price data for chart testing
     static func createChartPrices() -> [Double] {
         return [
             65000.0, 65200.0, 64800.0, 65100.0, 65400.0,
@@ -136,7 +131,7 @@ enum DataFactoryTest {
         ]
     }
     
-    /// Creates sample chart response for API testing
+
     static func createChartResponse() -> ChartResponse {
         let prices = [
             [1699833600000.0, 65000.0],
@@ -148,9 +143,7 @@ enum DataFactoryTest {
         return ChartResponse(prices: prices)
     }
     
-    // MARK: - Error Objects
-    
-    /// Creates various network errors for testing error scenarios
+
     static func createNetworkErrors() -> [NetworkError] {
         return [
             .badURL,

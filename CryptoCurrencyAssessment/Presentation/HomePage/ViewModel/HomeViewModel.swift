@@ -7,13 +7,11 @@
 
 import Foundation
 /// The `HomeViewModel` is responsible for managing and exposing cryptocurrency data
-/// to the HomeView in an MVVM architecture. It interacts with the domain layer through
-/// a use case (`FetchTopFiveCryptoUseCaseProtocol`) to fetch data, handles loading states,
-/// and provides error messages if network requests fail.
+/// to the HomeView in an MVVM architecture.
 
 
 class HomeViewModel : ObservableObject{
-    /// The use case responsible for fetching the top five cryptocurrencies.
+    /// Fetching the top five cryptocurrencies.
     private let fetchCryptoUseCase: FetchTopFiveCryptoUseCaseProtocol
     
     /// The list of top five cryptocurrencies fetched from the API or cache.
@@ -25,7 +23,7 @@ class HomeViewModel : ObservableObject{
     /// Indicates whether a network request is currently in progress.
     @Published var isLoading = false
     
-    /// The total value of the top five cryptocurrencies, calculated by summing their current prices.
+    /// The total value of the top five cryptocurrencies
     @Published var totalValue: Double = 0.0
     
     // MARK: - Initializer
@@ -35,7 +33,6 @@ class HomeViewModel : ObservableObject{
     
     
     /// Loads the top five cryptocurrencies asynchronously.
-    /// The method must be called from an asynchronous context.
     
     @MainActor
     func loadTopFive() async {

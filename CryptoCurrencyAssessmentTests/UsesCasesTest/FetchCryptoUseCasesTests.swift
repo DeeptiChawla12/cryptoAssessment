@@ -8,16 +8,12 @@
 import XCTest
 @testable import CryptoCurrencyAssessment
 
-/// Comprehensive test suite for FetchCryptopFiveUseCases
-/// Tests the domain layer business logic in isolation using mocked dependencies
 final class FetchCryptoUseCasesTests: XCTestCase {
     
-    // MARK: - Test Properties
-    
     var sut: FetchCryptopFiveUseCases!
-  private  var mockRepository: MockCryptoRepository!
+    private  var mockRepository: MockCryptoRepository!
     
-    // MARK: - Test Lifecycle
+    
     
     override func setUp() {
         super.setUp()
@@ -31,9 +27,7 @@ final class FetchCryptoUseCasesTests: XCTestCase {
         super.tearDown()
     }
     
-    // MARK: - Success Scenarios
     
-    /// Tests successful retrieval of top five cryptocurrencies
     func test_fetchTopFiveCryptoList_Success_ReturnsCorrectData() async throws {
         // Given
         let expectedCryptos = DataFactoryTest.createTopFiveCryptos()
@@ -49,41 +43,37 @@ final class FetchCryptoUseCasesTests: XCTestCase {
         XCTAssertEqual(mockRepository.fetchTopFiveCallCount, 1, "Repository should be called exactly once")
     }
     
-    /// Tests that use case properly delegates to repository
     func test_fetchTopFiveCryptoList_Success_CallsRepository() async throws {
-        // Given
+        
         let testCryptos = DataFactoryTest.createTopFiveCryptos()
         mockRepository.setSuccessResponse(testCryptos)
         
-        // When
+        
         _ = try await sut.fetchTopFiveCryptoList()
         
-        // Then
+        
         XCTAssertEqual(mockRepository.fetchTopFiveCallCount, 1, "Should call repository exactly once")
     }
     
-    /// Tests successful retrieval with empty data
     func test_fetchTopFiveCryptoList_Success_EmptyData() async throws {
-        // Given
+        
         mockRepository.setSuccessResponse([])
         
-        // When
+        
         let result = try await sut.fetchTopFiveCryptoList()
         
-        // Then
+        
         XCTAssertTrue(result.isEmpty, "Should return empty array when no data available")
         XCTAssertEqual(mockRepository.fetchTopFiveCallCount, 1, "Repository should be called once")
     }
     
-    // MARK: - Error Scenarios
     
-    /// Tests that network errors are properly propagated
     func test_fetchTopFiveCryptoList_NetworkError_ThrowsCorrectError() async {
-        // Given
+        
         let expectedError = NetworkError.noInternet
         mockRepository.setFailureResponse(expectedError)
         
-        // When/Then
+        
         do {
             _ = try await sut.fetchTopFiveCryptoList()
             XCTFail("Should throw network error")
@@ -95,13 +85,13 @@ final class FetchCryptoUseCasesTests: XCTestCase {
         }
     }
     
-    /// Tests handling of server errors
+    
     func test_fetchTopFiveCryptoList_ServerError_ThrowsCorrectError() async {
-        // Given
+        
         let expectedError = NetworkError.invalidResponse(statusCode: 500)
         mockRepository.setFailureResponse(expectedError)
         
-        // When/Then
+        
         do {
             _ = try await sut.fetchTopFiveCryptoList()
             XCTFail("Should throw server error")
@@ -116,13 +106,13 @@ final class FetchCryptoUseCasesTests: XCTestCase {
         }
     }
     
-    /// Tests handling of decoding errors
+    
     func test_fetchTopFiveCryptoList_DecodingError_ThrowsCorrectError() async {
-        // Given
+        
         let expectedError = NetworkError.decodingError
         mockRepository.setFailureResponse(expectedError)
         
-        // When/Then
+        
         do {
             _ = try await sut.fetchTopFiveCryptoList()
             XCTFail("Should throw decoding error")
@@ -133,22 +123,19 @@ final class FetchCryptoUseCasesTests: XCTestCase {
         }
     }
     
-    // MARK: - Performance Tests
     
-    /// Tests that multiple concurrent calls work correctly
     func test_fetchTopFiveCryptoList_ConcurrentCalls_HandledCorrectly() async throws {
-        // Given
+        
         let expectedCryptos = DataFactoryTest.createTopFiveCryptos()
         mockRepository.setSuccessResponse(expectedCryptos)
         
-        // When - Make multiple concurrent calls
         async let result1 = sut.fetchTopFiveCryptoList()
         async let result2 = sut.fetchTopFiveCryptoList()
         async let result3 = sut.fetchTopFiveCryptoList()
         
         let results = try await [result1, result2, result3]
         
-        // Then
+        
         XCTAssertEqual(results.count, 3, "Should handle 3 concurrent calls")
         results.forEach { result in
             XCTAssertEqual(result.count, 5, "Each result should have 5 items")
@@ -158,9 +145,6 @@ final class FetchCryptoUseCasesTests: XCTestCase {
     }
 }
 
-// MARK: - Mock Repository
-
-/// Mock implementation of CryptoRepositoryProtocol for use case testing
 private final class MockCryptoRepository: CryptoRepositoryProtocol {
     
     var shouldSucceed = true
@@ -171,7 +155,7 @@ private final class MockCryptoRepository: CryptoRepositoryProtocol {
     func fetchTopFive() async throws -> [CryptoModel] {
         fetchTopFiveCallCount += 1
         
-        // Simulate async delay
+        
         try await Task.sleep(nanoseconds: 50_000_000) // 0.05 seconds
         
         if !shouldSucceed {

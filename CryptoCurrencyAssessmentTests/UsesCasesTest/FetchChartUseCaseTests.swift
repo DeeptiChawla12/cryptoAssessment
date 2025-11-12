@@ -9,16 +9,15 @@ import XCTest
 
 @testable import CryptoCurrencyAssessment
 
-/// Comprehensive test suite for FetchChartUseCase
-/// Tests the chart data fetching business logic with mock dependencies
+
 final class FetchChartUseCaseTests: XCTestCase {
     
-    // MARK: - Test Properties
+    
     
     var sut: FetchChartUseCase!
    private var mockRepository: MockDetailCryptoRepository!
     
-    // MARK: - Test Lifecycle
+   
     
     override func setUp() {
         super.setUp()
@@ -32,8 +31,7 @@ final class FetchChartUseCaseTests: XCTestCase {
         super.tearDown()
     }
     
-    // MARK: - Success Scenarios
-    
+   
     /// Tests successful chart data retrieval
     func test_execute_Success_ReturnsChartData() async throws {
         // Given
@@ -41,28 +39,28 @@ final class FetchChartUseCaseTests: XCTestCase {
         let expectedPrices = DataFactoryTest.createChartPrices()
         mockRepository.setSuccessResponse(expectedPrices)
         
-        // When
+    
         let result = try await sut.execute(for: cryptoId)
         
-        // Then
+       
         XCTAssertEqual(result.count, expectedPrices.count, "Should return correct number of price points")
         XCTAssertEqual(result, expectedPrices, "Should return expected price data")
         XCTAssertEqual(mockRepository.fetchChartCallCount, 1, "Repository should be called exactly once")
         XCTAssertEqual(mockRepository.lastRequestedId, cryptoId, "Should pass correct crypto ID to repository")
     }
     
-    /// Tests chart data retrieval with different cryptocurrency IDs
+   
     func test_execute_Success_DifferentCryptoIds() async throws {
-        // Given
+      
         let testIds = ["bitcoin", "ethereum", "solana"]
         let expectedPrices = DataFactoryTest.createChartPrices()
         mockRepository.setSuccessResponse(expectedPrices)
         
         for testId in testIds {
-            // When
+           
             let result = try await sut.execute(for: testId)
             
-            // Then
+           
             XCTAssertEqual(result.count, expectedPrices.count, "Should return data for \(testId)")
             XCTAssertEqual(mockRepository.lastRequestedId, testId, "Should track correct ID for \(testId)")
         }
@@ -70,30 +68,28 @@ final class FetchChartUseCaseTests: XCTestCase {
         XCTAssertEqual(mockRepository.fetchChartCallCount, testIds.count, "Should call repository for each ID")
     }
     
-    /// Tests empty chart data handling
+   
     func test_execute_Success_EmptyChartData() async throws {
-        // Given
+        
         let cryptoId = "unknown-coin"
         mockRepository.setSuccessResponse([])
         
-        // When
+       
         let result = try await sut.execute(for: cryptoId)
         
-        // Then
+       
         XCTAssertTrue(result.isEmpty, "Should handle empty chart data")
         XCTAssertEqual(mockRepository.fetchChartCallCount, 1, "Repository should be called once")
     }
     
-    // MARK: - Error Scenarios
-    
-    /// Tests network error propagation
+   
     func test_execute_NetworkError_ThrowsCorrectError() async {
-        // Given
+        
         let cryptoId = "bitcoin"
         let expectedError = NetworkError.noInternet
         mockRepository.setFailureResponse(expectedError)
         
-        // When/Then
+       
         do {
             _ = try await sut.execute(for: cryptoId)
             XCTFail("Should throw network error")
@@ -105,14 +101,14 @@ final class FetchChartUseCaseTests: XCTestCase {
         }
     }
     
-    /// Tests invalid cryptocurrency ID handling
+ 
     func test_execute_InvalidCryptoId_ThrowsError() async {
-        // Given
+       
         let invalidId = ""
         let expectedError = NetworkError.badURL
         mockRepository.setFailureResponse(expectedError)
         
-        // When/Then
+       
         do {
             _ = try await sut.execute(for: invalidId)
             XCTFail("Should throw error for invalid ID")
@@ -122,15 +118,14 @@ final class FetchChartUseCaseTests: XCTestCase {
             XCTFail("Should throw NetworkError, but threw: \(error)")
         }
     }
-    
-    /// Tests server error handling
+   
     func test_execute_ServerError_ThrowsCorrectError() async {
-        // Given
+       
         let cryptoId = "bitcoin"
         let expectedError = NetworkError.invalidResponse(statusCode: 404)
         mockRepository.setFailureResponse(expectedError)
         
-        // When/Then
+    
         do {
             _ = try await sut.execute(for: cryptoId)
             XCTFail("Should throw server error")
@@ -145,16 +140,14 @@ final class FetchChartUseCaseTests: XCTestCase {
         }
     }
     
-    // MARK: - Performance Tests
-    
-    /// Tests concurrent chart data requests
+
     func test_execute_ConcurrentRequests_HandledCorrectly() async throws {
-        // Given
+        
         let cryptoIds = ["bitcoin", "ethereum", "solana"]
         let expectedPrices = DataFactoryTest.createChartPrices()
         mockRepository.setSuccessResponse(expectedPrices)
         
-        // When - Make concurrent requests
+       
         let results = try await withThrowingTaskGroup(of: [Double].self) { group in
             for id in cryptoIds {
                 group.addTask {
@@ -169,7 +162,7 @@ final class FetchChartUseCaseTests: XCTestCase {
             return allResults
         }
         
-        // Then
+       
         XCTAssertEqual(results.count, 3, "Should handle 3 concurrent requests")
         results.forEach { result in
             XCTAssertEqual(result.count, expectedPrices.count, "Each result should have correct data")
@@ -178,9 +171,7 @@ final class FetchChartUseCaseTests: XCTestCase {
     }
 }
 
-// MARK: - Mock Detail Repository
 
-/// Mock implementation of DetailCryptoRepositoryProtocol for chart use case testing
 private final class MockDetailCryptoRepository: DetailCryptoRepositoryProtocol {
     
     var shouldSucceed = true

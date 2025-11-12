@@ -18,6 +18,7 @@ enum AppConstants {
         static let currency = "aud"
         static let topFiveCount = "5"
         
+        
         // Common Paths
         static let cryptoMarketsPath = "/api/v3/coins/markets"
     }
@@ -29,6 +30,7 @@ enum AppConstants {
         static let perPage = "per_page"
         static let page = "page"
         static let sparkline = "sparkline"
+        static let days  = "days"
     }
     
     // MARK: - Cache Keys

@@ -45,8 +45,8 @@ enum CryptoEndPoint: EndPoint {
             
         case .marketChart(_, let days):
             return [
-                URLQueryItem(name: "vs_currency", value: "usd"),
-                URLQueryItem(name: "days", value: "\(days)")
+                URLQueryItem(name: AppConstants.QueryKeys.vsCurrency, value: AppConstants.API.currency),
+                URLQueryItem(name: AppConstants.QueryKeys.days, value: "\(days)")
             ]
         }
     }
